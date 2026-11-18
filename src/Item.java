@@ -1,6 +1,6 @@
-public class Item {
-    private final String nome;
-    private final int valor;
+public class Item extends Personagem {
+    private String nome;
+    private int valor;
 
     public Item(String nome, int valor) {
         this.nome = nome;
