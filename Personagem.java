@@ -9,6 +9,7 @@ public abstract class Personagem extends Item {
     private int defesa;
     private int mana;
     private int destreza;
+    private Raca raca;
 
     public Personagem(String nome) {
 
@@ -44,6 +45,14 @@ public abstract class Personagem extends Item {
         } else {
             System.out.println("A vida não pode ser reduzida por este método");
         }
+    }
+
+    public Raca getRaca() {
+    return raca;
+    }
+    
+    public void setRaca(Raca raca) {
+        this.raca = raca;
     }
 
     public int getNivel() {
