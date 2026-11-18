@@ -1,5 +1,14 @@
 
-public abstract class Personagem extends Item {
+
+public enum Racas {
+
+    HUMANO,
+    ANAO,
+    ELFO,
+    DRACONATO
+
+}
+public abstract class Personagem {
 
     private String nome;
     private int vida;
@@ -9,7 +18,7 @@ public abstract class Personagem extends Item {
     private int defesa;
     private int mana;
     private int destreza;
-    private Raca raca;
+    private Racas raca;
 
     public Personagem(String nome) {
 
@@ -21,6 +30,7 @@ public abstract class Personagem extends Item {
         this.defesa = 5;
         this.mana = 30;
         this.destreza = 7;
+        this.raca;
     }
 
     public String getNome() {
