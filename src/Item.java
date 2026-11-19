@@ -1,4 +1,4 @@
-public class Item extends Personagem {
+public class Item {
     private String nome;
     private int valor;
 
