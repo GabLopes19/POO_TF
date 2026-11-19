@@ -1,4 +1,4 @@
-public class Classes extends Personagem {
+public class Classes extends Personagem implements Comparable<Classes> { {
 
     public enum TipoClasse {
         MAGO,
@@ -213,4 +213,9 @@ public class Classes extends Personagem {
         curar(quantidade);
         return true;
     }
+
+    @Override
+    public int compareTo(Classes outro) {
+        return this.getNome().compareTo(outro.getNome());
+}
 }
